@@ -6,7 +6,7 @@ trait MobileUserAuthentication
   protected string $mobileLogin = 'mobileLogin';
   protected string $mobilePassword = 'mobilePassword';
 
-  public function authenticateMobile(string $login, string $password): null|string|bool
+  public function authenticate(string $login, string $password): null|string|bool
   {
     $result = null;
 

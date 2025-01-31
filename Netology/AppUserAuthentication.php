@@ -6,7 +6,7 @@ trait AppUserAuthentication
   protected string $appLogin = 'appLogin';
   protected string $appPassword = 'appPassword';
 
-  public function authenticateApp(string $login, string $password): null|string|bool
+  public function authenticate(string $login, string $password): null|string|bool
   {
     $result = null;
 
